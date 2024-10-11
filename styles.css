@@ -1,0 +1,272 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    height: 100%;
+}
+
+body {
+    background-image: url(img/background-flicker.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 34vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(2rem);
+}
+
+.leElevateLeft span {
+    animation-name: leElevateLeft
+}
+
+@keyframes leElevateLeft {
+    from {
+        transform: translateY(100%) rotate(-20deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+
+    40% {
+        transform: rotate(20deg);
+        transform-origin: right;
+    }
+
+    65% {
+        transform: rotate(0deg);
+        transform-origin: right;
+    }
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 35vh;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #5d091b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+    width: 100%;
+    min-height: 200px;
+    border: none;
+    display: block;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    height: 10vh;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.youtube {
+    background-color: #FF0000;
+    animation-delay: 0s;
+}
+
+.instagram {
+    background-color: #E4405F;
+    animation-delay: 0.5s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+footer {
+    padding: 2.5rem 0;
+
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .video-container {
+        width: 60%;
+        transform: translateY(-2rem);
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 240px;
+    }
+
+    .carousel-item {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-buttons {
+        position: relative;
+        top: 1rem;
+    }
+
+    .social-button {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-container {
+        width: 60%;
+        transform: translateY(-3rem);
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 320px;
+    }
+
+    .carousel-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-buttons {
+        position: relative;
+        transform: translateY(-1rem);
+    }
+
+    .social-button {
+        width: 70px;
+        height: 70px;
+        font-size: 36px;
+
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
+
+    .video-container {
+        width: 80%;
+        transform: translateY(-4rem);
+    }
+
+    .video-container iframe {
+        width:100%;
+        height: 280px;
+    }
+
+    .carousel-item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-buttons {
+        position: relative;
+        
+        
+    }
+
+    .social-button {
+        width: 80px;
+        height: 80px;
+        font-size: 46px;
+
+    }
+}
+
