@@ -76,8 +76,8 @@ header {
 .social-buttons {
     display: flex;
     justify-content: center;
-    align-items: end;
-    gap: 20px;
+    align-items: center;
+    gap: 50px;
     height: 10vh;
 }
 
@@ -223,6 +223,7 @@ footer {
 
     .social-button {
         font-size: 46px;
+    
 
     }
 }
