@@ -76,7 +76,7 @@ header {
 .social-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 50px;
     height: 10vh;
 }
