@@ -85,11 +85,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #333;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 32px;
     transition: all 0.3s ease;
@@ -101,17 +97,17 @@ header {
 }
 
 .youtube {
-    background-color: #FF0000;
+    
     animation-delay: 0s;
 }
 
 .instagram {
-    background-color: #E4405F;
+    
     animation-delay: 0.5s;
 }
 
 .whatsapp {
-    background-color: #25D366;
+    
     animation-delay: 1s;
 }
 
@@ -128,7 +124,7 @@ header {
 }
 
 footer {
-    padding: 2.5rem 0;
+    padding:10px;
 
 }
 
@@ -150,8 +146,8 @@ footer {
 
 .carousel-item {
     flex: 0 0 auto;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     margin: 0 10px;
     border-radius: 50%;
     object-fit: cover;
@@ -189,19 +185,17 @@ footer {
     }
 
     .carousel-item {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     .social-buttons {
         position: relative;
-        top: 1rem;
+        
     }
 
     .social-button {
-        width: 60px;
-        height: 60px;
-        font-size: 28px;
+        font-size: 38px;
 
     }
 }
@@ -218,19 +212,17 @@ footer {
     }
 
     .carousel-item {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
 
     .social-buttons {
         position: relative;
-        transform: translateY(-1rem);
+        
     }
 
     .social-button {
-        width: 70px;
-        height: 70px;
-        font-size: 36px;
+        font-size: 46px;
 
     }
 }
@@ -251,11 +243,6 @@ footer {
         height: 280px;
     }
 
-    .carousel-item {
-        width: 70px;
-        height: 70px;
-    }
-
     .social-buttons {
         position: relative;
         
@@ -263,9 +250,9 @@ footer {
     }
 
     .social-button {
-        width: 80px;
-        height: 80px;
-        font-size: 46px;
+        
+        font-size: 52px;
+        padding: 6px;
 
     }
 }
