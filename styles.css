@@ -26,9 +26,10 @@ header {
     transform: translateY(2rem);
 }
  h1 {
-    padding: 40px 40px 0;
-    font-size: 1.1rem;
+    padding: 60px 40px 0;
+    font-size: 1.3rem;
     text-align: center;
+    position: fixed;
     
 }
 .leElevateLeft span {
@@ -212,14 +213,15 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    
     .video-container {
-        width: 60%;
-        transform: translateY(-3rem);
+        width: 50%;
+        transform: translateY(-1rem);
     }
 
     .video-container iframe {
         width: 100%;
-        height: 320px;
+        height: 300px;
     }
 
     .carousel-item {
@@ -240,19 +242,16 @@ footer {
 }
 
 @media (min-width: 1440px) {
-    body {
-        background-size: contain;
-        background-repeat: repeat-x;
-    }
+    
 
     .video-container {
         width: 80%;
-        transform: translateY(-4rem);
+        transform: translateY(-1rem);
     }
 
     .video-container iframe {
         width:100%;
-        height: 280px;
+        height: 350px;
     }
 
     .social-buttons {
