@@ -145,9 +145,10 @@ h1 {
     }
 }
 
+
 @media (max-width: 375px) {
     header>h1 {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 30px 15px 0;
     }
 }
